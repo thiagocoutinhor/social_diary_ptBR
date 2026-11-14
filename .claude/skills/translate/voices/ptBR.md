@@ -118,6 +118,7 @@ change it here too. Marked (?) = worth a native's first look.
 | campfire | fogueira |
 | trade | troca |
 | duel | duelo |
+| find | descoberta |
 
 ## Length
 Portuguese runs about 15 to 25 % longer than English. Tight surfaces:
