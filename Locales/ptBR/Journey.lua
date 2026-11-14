@@ -140,7 +140,7 @@ ns.Locale.Add("ptBR", {
     ["%1$s %3$s.##zone"] = "%1$s em %3$s.",
     ["You lingered %3$s for %2$s.##zone"] = "Você ficou algum tempo em %3$s por %2$s.",
     ["fighting %s##zone"] = "lutando contra %s",
-    ["quests %s##zone"] = "fazendo missões",
+    ["quests %s##zone"] = "missões %s",
     ["a rest %s##zone"] = "um descanso %s",
     ["After that, %s."] = "Depois disso, %s.",
     ["Later, %s."] = "Mais tarde, %s.",

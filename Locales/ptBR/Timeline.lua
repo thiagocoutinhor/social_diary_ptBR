@@ -7,12 +7,12 @@ ns.Locale.Add("ptBR", {
     -- UI/Words/Timeline.lua - Describing timeline items
     ["Raided together"] = "Farra juntos",
     ["Grouped"] = "Grupou",
-    ["falling##death"] = "queda",
-    ["drowning##death"] = "afogamento",
-    ["fatigue##death"] = "fadiga",
-    ["fire##death"] = "fogo",
-    ["lava##death"] = "lava",
-    ["slime##death"] = "gosma",
+    ["falling##death"] = "caindo",
+    ["drowning##death"] = "afogando-se",
+    ["fatigue##death"] = "fadigado",
+    ["fire##death"] = "queimado",
+    ["lava##death"] = "consumido por lava",
+    ["slime##death"] = "gosmento",
     ["%s died"] = "%s morreu",
     ["%s died there"] = "%s morreu lá",
     ["%1$s died %2$s##zone"] = "%1$s morreu em %2$s",
@@ -83,7 +83,7 @@ ns.Locale.Add("ptBR", {
     ["on the Deeprun Tram"] = "no Trem de Velocidade Profunda",
     ["Kept company %s##zone"] = "Ficou por perto em %s",
     ["Kept each other company %s##zone"] = "Eles ficaram um pelo outro em %s",
-    ["Went %1$s %2$s together##zone"] = "Viajou de um a outro juntos em %2$s",
+    ["Went %1$s %2$s together##zone"] = "Viajou %1$s %2$s juntos",
     ["Travelled %1$s %2$s together##zone"] = "Jornou entre %1$s e %2$s juntos",
     ["Reached lv %d together"] = "Atingiu nível %d juntos",
     ["{you} both reached lv %d"] = "{vocês} ambos atingiram nível %d",
@@ -95,7 +95,7 @@ ns.Locale.Add("ptBR", {
     ["{You} reached lv %1$d with %2$s"] = "{Você} atingiu nível %1$d com %2$s",
     ["{you} reached lv %d"] = "{você} atingiu nível %d",
     ["%s together##duration"] = "Juntos por %s",
-    ["{You} died %1$s with %2$s close by"] = "{Você} morreu com %2$s por perto",
+    ["{You} died %1$s with %2$s close by"] = "{Você} morreu %1$s com %2$s por perto",
     ["%1$s died %2$s at {your} side"] = "%1$s morreu %2$s ao lado de {você}",
     ["%1$s died %2$s with {you} close by"] = "%1$s morreu %2$s com {você} por perto",
     ["{You} and %1$s died %2$s between you"] = "{Você} e %1$s morreram %2$s entre vocês",
@@ -136,8 +136,8 @@ ns.Locale.Add("ptBR", {
     ["%d message|%d messages##plural"] = "%d mensagem|%d mensagens",
     ["%d quest|%d quests##plural"] = "%d quest|%d quests",
     -- Chaves faltantes de UI/Words/Timeline.lua - linha do tempo, batalhas e instâncias
-    ["%1$dx %2$s"] = "",  -- fragmento com placeholder genérico
-    ["%1$s: \"%2$s\""] = "",  -- citação na timeline
+    ["%1$dx %2$s"] = "%1$dx %2$s",  -- fragmento com placeholder genérico
+    ["%1$s: \"%2$s\""] = "%1$s: \"%2$s\"",  -- citação na timeline
     ["killed %s##timeline"] = "matou %s",
     ["{you} reached lv %1$d, %2$s lv %3$d"] = "{você} atingiu nível %1$d, %2$s nível %3$d",
     ["Together for %1$s; %2$s"] = "Juntos por %1$s; %2$s",

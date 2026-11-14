@@ -35,7 +35,7 @@ ns.Locale.Add("ptBR", {
     ["DRAWING YOUR PATH"] = "DESENHANDO SUA ROTA",
     ["Click the map to add a point. Click a boss to add a stop. Click stairs or a door to add a step. Ctrl-click a line to insert a point. Drag a point to move it. Right-click a point to delete it."] = "Clique no mapa para adicionar um ponto. Clique num chefe para adicionar uma parada. Clique em escada ou porta para adicionar um passo. Segure Ctrl e clique numa linha para inserir um ponto. Arraste um ponto para movê-lo. Clique com o botão direito num ponto para removê-lo.",
     ["No point selected. New points go at the end."] = "Nenhum ponto selecionado. Novos pontos vão no final.",
-    ["Point %1$d of %2$d selected."] = "Ponto %2$dº de %2$d selecionado.",
+    ["Point %1$d of %2$d selected."] = "Ponto %1$d de %2$d selecionado.",
     ["The path ends at point %d. Click a grey point to join it back up."] = "A rota termina no ponto %d. Clique num ponto cinza para reconectá-lo.",
     ["Joined the path back up."] = "Reconectou à rota.",
     ["Joined the path back up. Left out: %s."] = "Reconectou à rota. Omisso: %s.",
