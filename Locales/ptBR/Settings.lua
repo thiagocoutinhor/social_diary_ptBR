@@ -126,7 +126,7 @@ ns.Locale.Add("ptBR", {
     ["Language"] = "Idioma",
     -- UI/Settings/Sections/Memory.lua
     ["%1$d in the diary, %2$s, %3$s, %4$s and %5$s.  About %6$d KB on disk."] = "%1$d no diário, %2$s, %3$s, %4$s e %5$s. Cerca de %6$d KB no disco.",
-    ["%d character known|%d characters known##plural"] = "%d personagem conhecido",
+    ["%d character known|%d characters known##plural"] = "%d personagem conhecido|%d personagens conhecidos",
     ["%d session|%d sessions##plural"] = "%d sessão",
     ["%d interaction|%d interactions##plural"] = "%d interação",
     ["%d sighting|%d sightings##plural"] = "%d aparição",

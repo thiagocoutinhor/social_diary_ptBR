@@ -6,7 +6,7 @@ if not ns.Locale.Is("ptBR") then return end
 ns.Locale.Add("ptBR", {
     -- UI/Windows/Entry.lua
     ["no interactions yet"] = "ainda sem interações",
-    ["%d interaction on record|%d interactions on record##plural"] = "%d interação registrada",
+    ["%d interaction on record|%d interactions on record##plural"] = "%d interação registrada|%d interações registradas",
     ["Added %1$s %2$s, %3$s##zone"] = "Adicionado %1$s %2$s, em %3$s",
     ["Added %1$s, %2$s"] = "Adicionado %1$s, em %2$s",
     ["What happened? What should you remember about them?"] = "O que aconteceu? O que você deve lembrar sobre eles?",

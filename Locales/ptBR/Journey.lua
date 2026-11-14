@@ -184,7 +184,7 @@ ns.Locale.Add("ptBR", {
     ["%s twice"] = "%s duas vezes",
     ["%s thrice"] = "%s três vezes",
     ["%1$s %2$s time|%1$s %2$s times##plural"] = "%1$s %2$s vez|%1$s %2$s vezes",
-    ["%1$s, and %2$s other|%1$s, and %2$s others##plural"] = "%1$s, e mais %2$s outro|e mais %2$s outros",
+    ["%1$s, and %2$s other|%1$s, and %2$s others##plural"] = "%1$s e mais %2$s outro|%1$s e mais %2$s outros",
     ["you died to %s"] = "você morreu por causa de %s",
     ["you died"] = "você morreu",
     ["and one you didn't keep|and %s you didn't keep##plural"] = "e um que você não manteve|e %s que você não manteve",

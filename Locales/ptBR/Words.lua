@@ -132,7 +132,7 @@ ns.Locale.Add("ptBR", {
     ["%d day later|%d days later##plural"] = "%d dia depois|%d dias depois",
     ["you at level %1$d, they at %2$d"] = "você no nível %1$d, essa pessoa no %2$d",
     ["you were %s##zone"] = "você estava %s",
-    ["Seen on %1$d day since %2$s. %3$s|Seen on %1$d days since %2$s. %3$s##plural"] = "Apareceu em %1$d dia desde %2$s. %3$s|Apareceu em %1$d dias desde %2$s. %3$s",
+    ["Seen on %1$d day since %2$s. %3$s|Seen on %1$d days since %2$s. %3$s##plural"] = "Visto em %1$d dia desde %2$s. %3$s|Visto em %1$d dias desde %2$s. %3$s",
     ["Pencilled in until %s"] = "Anotado a lápis até %s",
     ["Strangers are forgotten after %s. Once in your diary, all of this is kept for good."] = "Pessoas desconhecidas são esquecidas depois de %s. Uma vez no seu diário, tudo isso fica guardado para sempre.",
     ["Add %s to your diary"] = "Adicionar %s ao diário",
