@@ -196,6 +196,7 @@ ns.Locale.Add("ptBR", {
     ["Click to open its sheet."] = "Clique para abrir sua folha.",
     ["+ Add"] = "+ Adicionar",
     ["A dungeon"] = "Uma instância",
+    ["a dungeon"] = "uma instância",
     ["%1$d of %2$d bosses"] = "%1$d de %2$d chefes",
     ["%1$s, with %2$s"] = "%1$s, com %2$s",
     -- UI/Journey/Text/Time.lua
@@ -227,7 +228,7 @@ ns.Locale.Add("ptBR", {
     ["Morning"] = "Manhã",
     ["Night"] = "Noite",
     ["Noon"] = "Meio-dia",
-    ["%1$s %2$s##month day"] = "%1$s de %2$s",
+    ["%1$s %2$s##month day"] = "%2$s de %1$s",
     ["%1$s %2$s##date and year"] = "%1$s de %2$s",
     -- UI/Journey/Text/Zones.lua
     ["Map %s"] = "Mapa %s",
