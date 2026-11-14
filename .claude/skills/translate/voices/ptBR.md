@@ -109,7 +109,7 @@ change it here too. Marked (?) = worth a native's first look.
 | Recently nearby | Recentemente próximo |
 | sighting | avistamento |
 | reunion | reencontro |
-| close call | quase morte (a card's title: "Uma quase morte") |
+| close call | escapada por pouco (a card's title: "Uma escapada por pocuo") |
 | hunt | caçada |
 | first (a first found) | primeira conquista (a card: "Sua primeira bolsa!") |
 | witness | testemunha |

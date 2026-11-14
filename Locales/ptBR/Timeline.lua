@@ -66,7 +66,7 @@ ns.Locale.Add("ptBR", {
     ["Article"] = "Artigo",
     ["Disable (\"A Hogger\")"] = "Desabilitar (\"A Hogger\")",
     ["%, if they saved you"] = "%, se eles te salvaram",
-    -- UI/Witnesses/Text.lua - witness deeds and descriptions  
+    -- UI/Witnesses/Text.lua - witness deeds and descriptions
     ["saved you##many"] = "salvou você",
     ["tried to save you##many"] = "tentou salvar você",
     ["watched you die##many"] = "te assistiu morrer",
@@ -94,10 +94,8 @@ ns.Locale.Add("ptBR", {
     ["{You} reached lv %1$d while questing with %2$s"] = "{Você} atingiu nível %1$d enquanto fazia quests com %2$s",
     ["{You} reached lv %1$d with %2$s"] = "{Você} atingiu nível %1$d com %2$s",
     ["{you} reached lv %d"] = "{você} atingiu nível %d",
-    -- Add translation for missing key at line 1859 in enUS.lua (different context from line 86)
     ["%s together##duration"] = "Juntos por %s",
     ["{You} died %1$s with %2$s close by"] = "{Você} morreu %1$s com %2$s por perto",
-    -- Note: Line 95 already has a similar key but different variable order
     ["%1$s died %1$s with %2$s close by"] = "%1$s morreu %1$s com %2$s por perto",
     ["%1$s died %2$s at {your} side"] = "%1$s morreu %2$s ao lado de {você}",
     ["%1$s died %2$s with {you} close by"] = "%1$s morreu %2$s com {você} por perto",
@@ -116,7 +114,6 @@ ns.Locale.Add("ptBR", {
     ["First seen, level %s"] = "Primeiro visto, nível %s",
     ["First seen"] = "Primeiro visto",
     ["Added to the diary %s##zone"] = "Adicionado ao diário em %s##zona",
-    -- enUS line 1881: "%1$s %2$s %3$s##zone" - generic zone sentence
     ["%1$s %2$s %3$s##zone"] = "%1$s %2$s %3$s##zona",
     ["Added to the diary"] = "Adicionado ao diário",
     ["ran %s##count"] = "passeou por %s##conta",
@@ -143,23 +140,4 @@ ns.Locale.Add("ptBR", {
     ["%1$d trade: %2$s|%1$d trades: %2$s##plural"] = "%1$d troca: %2$s|%1$d trocas: %2$s##plural",
     ["%d message|%d messages##plural"] = "%d mensagem|%d mensagens##plural",
     ["%d quest|%d quests##plural"] = "%d quest|%d quests##plural",
-})
-
-    ["{your} %s match together"] = "{seu} %s jogo junto",
-    ["{your} %s match against them"] = "{seu} %s jogo contra eles",
-    -- enUS line 1863 (lowercase "you")  
-    ["{you} reached lv %1$d, %2$s lv %3$d"] = "{você} atingiu nível %1$d, {vocês} nível %3$d",
-
-    -- Add missing key from enUS line 1859: "%s together" - but already added at line 48
-    ["Also about %s."] = "Também sobre %s.",
-    ["Written at %1$s %2$s.##zone"] = "Escrito em %1$s, em %2$s.##zona",
-    ["Written at %s."] = "Escrito em %s.",
-    ["Click to change or delete it."] = "Clique para alterar ou apagá-la.",
-    ["%1$s went from level %2$s to %3$s"] = "%1$s subiu do nível %2$s ao nível %3$s",
-    ["Went from level %1$s to %2$s"] = "Subiu do nível %1$s ao nível %2$s",
-    ["%1$s  level %2$s"] = "%1$s   nível %2$s",
-    ["{You} died %s"] = "{Você} morreu %s vezes",
-    ["They"] = "Eles",
-    ["%1$s %2$s##name and times"] = "%1$s %2$s##nome e vezes",
-    ["%1$s died %2$s"] = "%1$s morreu %2$s vezes",
 })
