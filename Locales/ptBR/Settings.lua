@@ -62,7 +62,7 @@ ns.Locale.Add("ptBR", {
     ["Dungeon maps"] = "Mapas de masmorra",
     ["Show the usual way through on each map"] = "Mostrar o caminho usual em cada mapa",
     ["The diary can't follow you inside, so it inks the usual way up to the furthest boss you killed and pencils the rest."] = "O diário não pode seguir você dentro, então ele marca com tinta o caminho usual até o chefe mais distante que você matou e faz rascunho do resto.",
-    ["Open the diary on the map of the run you're in"] = "Abrir o diário no mapa da execução em que você está",
+    ["Open the diary on the map of the run you’re in"] = "Abrir o diário no mapa da execução em que você está",
     ["Only inside a dungeon or raid. Anywhere else, the diary opens where you left it."] = "Apenas dentro de uma masmorra ou instância. Em qualquer outro lugar, o diário abre onde você o deixou.",
     ["Dungeons and Raids"] = "Masmorras e Instâncias",
     -- UI/Settings/Sections/Feedback.lua
@@ -97,7 +97,7 @@ ns.Locale.Add("ptBR", {
     ["Simulate Page Turns"] = "Simular virada de páginas",
     ["New Diary entries add pages, and the book turns to the new page."] = "Novas entradas do Diário adicionam páginas, e o livro vira para a nova página.",
     ["Flat paper only"] = "Apenas papel plano",
-    ["No folds or bends on the sheets, and a person's name sits straight on their page."] = "Sem dobras ou curvaturas nas folhas, e o nome de uma pessoa fica reto em sua página.",
+    ["No folds or bends on the sheets, and a person’s name sits straight on their page."] = "Sem dobras ou curvaturas nas folhas, e o nome de uma pessoa fica reto em sua página.",
     ["Use fully discovered map for map sheets"] = "Usar mapa completamente descoberto para folhas de mapa",
     ["Hints"] = "Dicas",
     ["Show hints about things you may have missed"] = "Mostrar dicas sobre coisas que você pode ter perdido",

@@ -131,7 +131,7 @@ ns.Locale.Add("ptBR", {
     ["Your wording"] = "Sua redação",
     ["How should it read?"] = "Como deveria ser escrito?",
     ["Make the link"] = "Criar o link",
-    ["The diary couldn't find the English for this line. It goes as it is shown."] = "O diário não encontrou o inglês para esta linha. Ela vai como mostrada.",
+    ["The diary couldn’t find the English for this line. It goes as it is shown."] = "O diário não encontrou o inglês para esta linha. Ela vai como mostrada.",
     ["Copy this link into your browser. It opens a GitHub issue with everything filled in."] = "Copie este link para seu navegador. Ele abre um problema do GitHub com tudo preenchido.",
     -- UI/Windows/Suggest/Strip.lua
     ["Pick a line in the diary and suggest how it should read."] = "Escolha uma linha no diário e sugira como ela deve ser escrita.",
