@@ -119,6 +119,8 @@ change it here too. Marked (?) = worth a native's first look.
 | trade | troca |
 | duel | duelo |
 | find | descoberta |
+| died to | nas mãos de |
+| slime | gosma |
 
 ## Length
 Portuguese runs about 15 to 25 % longer than English. Tight surfaces:

@@ -86,7 +86,7 @@ ns.Locale.Add("ptBR", {
     ["Your Diary"] = "Seu Diário",
     -- UI/Journey/Text/Caption.lua
     ["Somewhere"] = "Algum lugar",
-    ["%1$s, %2$s##zone"] = "%1$s, %2$s##zona",
+    ["%1$s, %2$s##zone"] = "%1$s, %2$s",
     ["A fight, lost"] = "Uma luta, perdida",
     ["%s fight|%s fights##plural"] = "%s luta|%s lutas",
     ["Where the diary began"] = "Onde o diário começou",

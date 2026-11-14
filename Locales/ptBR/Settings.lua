@@ -198,4 +198,7 @@ ns.Locale.Add("ptBR", {
     ["Nearby Toast Blacklist"] = "Lista negra de alertas próximos",
     ["Toasts can get annoying for people you play with all the time."] = "Alertas podem ficar irritantes para pessoas com quem você joga o tempo todo.",
     ["Toasts"] = "Alertas",
+    -- Chaves faltantes de UI/Settings/Sections/Language.lua
+    ["Go to Feedback"] = "Ir para o Feedback",
+    ["Show the “Suggest Translation” slip"] = "Mostrar o “Sugira uma Tradução” slip",
 })
