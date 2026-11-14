@@ -145,7 +145,7 @@ ns.Locale.Add("ptBR", {
     ["Remember to use your hotkey for adding Notes! (%s)"] = "Lembre-se de usar seu atalho para adicionar Notas! (%s)",
     ["Fresh Pages"] = "Novas Páginas",
     ["Social Diary %s is here, with a few new things to find."] = "O Social Diary %s está aqui, com algumas coisas novas para encontrar.",
-    ["See what's new"] = "Ver o que há de novo",
+    ["See what’s new"] = "Ver o que há de novo",
     ["Translated Pages"] = "Páginas Traduzidas",
     ["The diary is now written in %s. The translation is early and machine-made, so expect odd lines and clipped text. Corrections are welcome."] = "O diário agora está escrito em %s. A tradução é preliminar e feita por máquina, então linhas estranhas e textos truncados podem aparecer. Correções são bem-vindas.",
     ["Go to Language"] = "Ir para Linguagem",
