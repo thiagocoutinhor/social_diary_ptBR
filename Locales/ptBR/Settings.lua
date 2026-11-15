@@ -31,7 +31,7 @@ ns.Locale.Add("ptBR", {
     ["About"] = "Sobre",
     -- UI/Settings/Sections/Battlegrounds.lua
     ["%1$d of %2$d kept whole so far. In %3$d match, the oldest begin to lose their strangers.|%1$d of %2$d kept whole so far. In %3$d matches, the oldest begin to lose their strangers.##plural"] = "%2$d campos de batalha: %1$d mantidos íntegros até agora. Até a partida %3$d, os mais antigos começarão a perder seus estranhos.",
-    ["The newest %d are kept whole. Older ones keep only the people from your diary.|The newest %d are kept whole. Older ones keep only the people from your diary.##plural"] = "Os mais recentes %d são mantidos íntegros. Os mais antigos mantêm apenas as pessoas do seu diário.",
+    ["The newest %d are kept whole. Older ones keep only the people from your diary.|The newest %d are kept whole. Older ones keep only the people from your diary.##plural"] = "O %d mais atual é mantido. Os mais antigos mantêm apenas as pessoas do seu diário.|Os %d mais atuais são mantidos. Os mais antigos mantêm apenas as pessoas do seu diário.",
     ["Scoreboards"] = "Quadros de pontuação",
     ["Keep the whole scoreboard for this many matches"] = "Manter o quadro completo por esse número de partidas",
     ["Older matches keep their map, result and times, and the people from your diary. Everyone else is rubbed out, leaving only a count."] = "Partidas mais antigas mantêm seu mapa, resultado e horários, e as pessoas do seu diário. Todos os outros são apagados, deixando apenas um contador.",
@@ -127,9 +127,9 @@ ns.Locale.Add("ptBR", {
     -- UI/Settings/Sections/Memory.lua
     ["%1$d in the diary, %2$s, %3$s, %4$s and %5$s.  About %6$d KB on disk."] = "%1$d no diário, %2$s, %3$s, %4$s e %5$s. Cerca de %6$d KB no disco.",
     ["%d character known|%d characters known##plural"] = "%d personagem conhecido|%d personagens conhecidos",
-    ["%d session|%d sessions##plural"] = "%d sessão",
-    ["%d interaction|%d interactions##plural"] = "%d interação",
-    ["%d sighting|%d sightings##plural"] = "%d aparição",
+    ["%d session|%d sessions##plural"] = "%d sessão|%d sessões",
+    ["%d interaction|%d interactions##plural"] = "%d interação|%d interações",
+    ["%d sighting|%d sightings##plural"] = "%d avistamento|%d avistamentos",
     ["Over %d MB: a lot to read at every login and /reload. Your diary keeps its history for good, so lowering the maximum chat lines (Recording) or deleting sightings is what brings it down."] = "Mais de %d MB: muita coisa para ler em cada login e /recarregar. Seu diário mantém seu histórico por longo prazo, então baixar o máximo de linhas de chat (Gravação) ou excluir aparições é o que reduz isso.",
     ["The shared diary is stored only on this computer, in %s. Nothing is sent to other players or to any server."] = "O diário compartilhado é armazenado apenas neste computador, em %s. Nada é enviado a outros jogadores ou a qualquer servidor.",
     ["This character's diary is stored only on this computer, in %s. Nothing is sent to other players or to any server."] = "O diário deste personagem é armazenado apenas neste computador, em %s. Nada é enviado a outros jogadores ou a qualquer servidor.",
