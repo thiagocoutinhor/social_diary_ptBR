@@ -120,7 +120,7 @@ ns.Locale.Add("ptBR", {
     ["%1$s rolled a %2$d"] = "%1$s rolou um %2$d",
     ["on %s##item"] = "em %s",
     -- UI/Journal/Book.lua
-    ["%d day|%d days##plural"] = "%d dia|A %d dias",
+    ["%d day|%d days##plural"] = "%d dia|%d dias",
     -- UI/Journal/Empty.lua
     ["This is where your diary entries will show up"] = "Aqui é onde suas entradas de diário aparecerão",
     ["Or press a key"] = "Ou pressione uma tecla",
@@ -206,10 +206,10 @@ ns.Locale.Add("ptBR", {
     ["Earlier"] = "Antes",
     ["tag: %s"] = "etiqueta: %s",
     ["relationship: %s"] = "relação: %s",
-    ["met %s##zone"] = "conhecido em %s",
-    ["met in the last %s day|met in the last %s days##plural"] = "visto nos últimos %s dia|%ss dias",
+    ["met %s##zone"] = "encontrado em %s",
+    ["met in the last %s day|met in the last %s days##plural"] = "encontrado no último %s dia|encontrado nos últimos %s dias",
     ["%d in the diary"] = "%d no diário",
-    ["nobody yet"] = "ninguém ainda",
+    ["nobody yet"] = "ainda ninguém",
     ["%1$d of %2$d"] = "%1$d / %2$d",
     ["Nobody matches."] = "Ninguém corresponde.",
     ["%d filter|%d filters##plural"] = "%d filtro|%d filtros",

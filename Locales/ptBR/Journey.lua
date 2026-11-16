@@ -120,7 +120,7 @@ ns.Locale.Add("ptBR", {
     -- UI/Journey/Text/Notes.lua
     ["And one more note.|And %d more notes.##plural"] = "E mais uma nota.|E mais %d notas.",
     -- UI/Journey/Text/Prose.lua
-    ["This diary began at level %1$d, %2$s, on %3$s.##zone"] = "Este diário começou no nível %1$d, em %2$s, %3$s.",
+    ["This diary began at level %1$d, %2$s, on %3$s.##zone"] = "Este diário começou no nível %1$d, %2$s, %3$s.",
     ["This diary began at level %1$d, on %2$s."] = "Este diário começou no nível %1$d, em %2$s.",
     ["Week of %s"] = "Semana de %s",
     ["Reached level %1$d %2$s, %3$s, on %4$s. The road goes on.##zone"] = "Alcançou o nível %1$d %2$s, %3$s, em %4$s. A estrada continua.",
@@ -128,9 +128,9 @@ ns.Locale.Add("ptBR", {
     ["Reached level %1$d, on %2$s. The road goes on."] = "Alcançou o nível %1$d, em %2$s. A estrada continua.",
     ["Your road begins here, on %1$s, %2$s.##zone"] = "Sua estrada começa aqui, em %1$s, %2$s.",
     ["Your road begins here, on %s."] = "Sua estrada começa aqui, em %s.",
-    ["Reached on %1$s %2$s, %3$s.##zone"] = "Chegou em %1$s de %2$s, %3$s.",
-    ["Reached on %1$s %2$s.##zone"] = "Chegou em %1$s de %2$s.",
-    ["Reached on %s."] = "Chegou em %s.",
+    ["Reached on %1$s %2$s, %3$s.##zone"] = "Chegou %1$s %2$s, %3$s.",
+    ["Reached on %1$s %2$s.##zone"] = "Chegou %2$s %1$s.",
+    ["Reached on %s."] = "Chegou %s.",
     ["%1$s of fighting %3$s.##zone"] = "%1$s de lutas contra %3$s.",
     ["%3$s kept you fighting for %2$s."] = "%3$s te fez lutar por %2$s.",
     ["%1$s of quests %3$s.##zone"] = "%1$s de missões %3$s.",

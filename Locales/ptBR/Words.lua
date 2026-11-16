@@ -49,10 +49,10 @@ ns.Locale.Add("ptBR", {
     ["%d week ago|%d weeks ago##plural"] = "há %d semana|há %d semanas",
     ["%1$s and %2$d more|%1$s and %2$d more##plural"] = "%1$s e mais %2$d|%1$s e mais %2$d",
     ["%1$s and %2$d other|%1$s and %2$d others##plural"] = "%1$s e %2$d outro|%1$s e %2$d outros",
-    ["%1$s and %2$s"] = "%1$s e %2$s"
+    ["%1$s and %2$s"] = "%1$s e %2$s",
     ["%1$s, and %2$s##list"] = "%1$s e %2$s",
     ["%1$s %2$s %3$s##date"] = "%2$s de %1$s de %3$s",
-    ["%1$s %2$s##date"] = "%2$s de %1S$s",
+    ["%1$s %2$s##date"] = "%1$s de %2$s",
     ["Today"] = "Hoje",
     ["Yesterday"] = "Ontem",
     ["%1$s, %2$s##weekday date"] = "%1$s, %2$s",
@@ -134,6 +134,6 @@ ns.Locale.Add("ptBR", {
     ["you were %s##zone"] = "você estava %s",
     ["Seen on %1$d day since %2$s. %3$s|Seen on %1$d days since %2$s. %3$s##plural"] = "Visto em %1$d dia desde %2$s. %3$s|Visto em %1$d dias desde %2$s. %3$s",
     ["Pencilled in until %s"] = "Anotado a lápis até %s",
-    ["Strangers are forgotten after %s. Once in your diary, all of this is kept for good."] = "Pessoas desconhecidas são esquecidas depois de %s. Uma vez no seu diário, tudo isso fica guardado para sempre.",
+    ["Strangers are forgotten after %s. Once in your diary, all of this is kept for good."] = "Desconhecidos são esquecidos depois de %s. Uma vez no diário, fica guardado para sempre.",
     ["Add %s to your diary"] = "Adicionar %s ao diário",
 })
