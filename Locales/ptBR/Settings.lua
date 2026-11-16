@@ -30,7 +30,7 @@ ns.Locale.Add("ptBR", {
     -- UI/Settings/Sections/About.lua
     ["About"] = "Sobre",
     -- UI/Settings/Sections/Battlegrounds.lua
-    ["%1$d of %2$d kept whole so far. In %3$d match, the oldest begin to lose their strangers.|%1$d of %2$d kept whole so far. In %3$d matches, the oldest begin to lose their strangers.##plural"] = "%2$d campos de batalha: %1$d mantidos íntegros até agora. Até a partida %3$d, os mais antigos começarão a perder seus estranhos.",
+    ["%1$d of %2$d kept whole so far. In %3$d match, the oldest begin to lose their strangers.|%1$d of %2$d kept whole so far. In %3$d matches, the oldest begin to lose their strangers.##plural"] = "%1$d de %2$d mantidos por enquanto. Em %3$d partida, as mais antigas começam a perder seus desconhecidos.|%1$d de %2$d mantidos por enquanto. Em %3$d partidas, as mais antigas começam a perder seus desconhecidos.",
     ["The newest %d are kept whole. Older ones keep only the people from your diary.|The newest %d are kept whole. Older ones keep only the people from your diary.##plural"] = "O %d mais atual é mantido. Os mais antigos mantêm apenas as pessoas do seu diário.|Os %d mais atuais são mantidos. Os mais antigos mantêm apenas as pessoas do seu diário.",
     ["Scoreboards"] = "Quadros de pontuação",
     ["Keep the whole scoreboard for this many matches"] = "Manter o quadro completo por esse número de partidas",
