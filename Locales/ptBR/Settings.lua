@@ -5,7 +5,7 @@ if not ns.Locale.Is("ptBR") then return end
 
 ns.Locale.Add("ptBR", {
     -- UI/Settings/Macro.lua
-    ["Open Social Diary"] = "Abrir Diário Social",
+    ["Open Social Diary"] = "Abrir Social Diary",
     ["Your macros are full, so there is no room for it. %s works anywhere, typed in chat."] = "Seus macros estão cheios, não há espaço para ele. %s pode ser usado em qualquer lugar, digitado no chat.",
     ["Place it in your action bars."] = "Coloque-o nas suas barras de ação.",
     ["place it with your mouse in a slot on your controller's action bar."] = "coloque-o com o mouse em uma posição da barra de ação do seu controlador.",
@@ -47,11 +47,11 @@ ns.Locale.Add("ptBR", {
     ["Fixes"] = "Correções",
     ["Changelog"] = "Registro de alterações",
     -- UI/Settings/Sections/Credits.lua
-    ["Social Diary is released under the GNU General Public License v3 or later. Versions up to 1.7.0 were under the MIT License."] = "Diário Social é lançado sob a Licença Pública Geral GNU v3 ou posterior. Versões até 1.7.0 estavam sob a Licença MIT.",
+    ["Social Diary is released under the GNU General Public License v3 or later. Versions up to 1.7.0 were under the MIT License."] = "Social Diary é lançado sob a Licença Pública Geral GNU v3 ou posterior. Versões até 1.7.0 estavam sob a Licença MIT.",
     ["Dungeon maps, bosses, routes and loot tables: Dungeon Crawler Forever by Per, GPL v3 or later."] = "Mapas de masmorras, chefes, rotas e tabelas de saques: Dungeon Crawler Forever, por Per, GPL v3 ou posterior.",
     ["Creature positions along dungeon routes: TrinityCore and VMaNGOS, via advocaite/TrinityCore, GPL v2 or later."] = "Posições de criaturas ao longo de rotas de masmorra: TrinityCore e VMaNGOS, por advocaite/TrinityCore, GPL v2 ou posterior.",
     ["The Neuton Italic font: SIL Open Font License 1.1."] = "A fonte Neuton Italic: Licença de Fonte Aberta SIL 1.1.",
-    ["Questie and QuestieDB, which Social Diary reads from while the game runs, if you have them installed."] = "Questie e QuestieDB, dos quais o Diário Social lê enquanto o jogo roda, caso você as tenha instalado.",
+    ["Questie and QuestieDB, which Social Diary reads from while the game runs, if you have them installed."] = "Questie e QuestieDB, dos quais o Social Diary lê enquanto o jogo roda, caso você as tenha instalado.",
     ["Map art by %1$s, for %2$s."] = "Arte de mapa por %1$s, para %2$s.",
     ["Map art by %s."] = "Arte de mapa por %s.",
     ["Thanks"] = "Agradecimentos",
@@ -77,7 +77,7 @@ ns.Locale.Add("ptBR", {
     ["Feedback"] = "Feedback",
     -- UI/Settings/Sections/Integrations.lua
     ["Questie installed"] = "Questie instalado",
-    ["Mobs get their real names and quest drops are checked against real drop rates. Social Diary only reads from it."] = "Monstros recebem seus nomes reais e caídas de missão são verificadas contra taxas reais de queda. Diário Social lê apenas dele.",
+    ["Mobs get their real names and quest drops are checked against real drop rates. Social Diary only reads from it."] = "Monstros recebem seus nomes reais e caídas de missão são verificadas contra taxas reais de queda. Social Diary lê apenas dele.",
     ["Found, but this version isn't supported."] = "Encontrado, mas esta versão não é suportada.",
     ["Deathlog installed"] = "Deathlog instalado",
     ["Adds permadeath notes in Hardcore. Not available until Hardcore is released."] = "Adiciona notas de morte permanente em Hardcore. Não disponível até que Hardcore seja lançado.",

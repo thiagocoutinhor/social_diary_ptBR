@@ -178,7 +178,7 @@ ns.Locale.Add("ptBR", {
     ["Duels won and lost %s##zone"] = "Duelos ganhos e perdidos %s",
     ["duels won and lost"] = "duelos ganhos e perdidos",
     ["duels mostly won"] = "maioria dos duelos ganhos",
-    ["Duels mostly won %s##zone"] = "Maioria dos duelos vencidos em %s",
+    ["Duels mostly won %s##zone"] = "Maioria dos duelos vencidos %s",
     ["duels mostly lost"] = "maioria dos duelos perdidos",
-    ["Duels mostly lost %s##zone"] = "NMaioria dos duelos perdidos em %s",
+    ["Duels mostly lost %s##zone"] = "NMaioria dos duelos perdidos %s",
 })
