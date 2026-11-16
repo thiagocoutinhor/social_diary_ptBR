@@ -82,8 +82,8 @@ ns.Locale.Add("ptBR", {
     ["%d fewer kills than expected in all|%d fewer kills than expected in all##plural"] = "%d morte a menos que o esperado no total|%d mortes a menos que o esperado no total",
     ["%d drop|%d drops##plural"] = "%d drop|%d drops",
     ["a drop"] = "um drop",
-    ["%s lucky hunt|%s lucky hunts##plural"] = "%s caçada de sorte|%s caçadas de sorte",
-    ["%s slow hunt|%s slow hunts##plural"] = "%s caçada lenta|%s caçadas lentas",
+    ["%s lucky hunt|%s lucky hunts##plural"] = "%s<f> caçada de sorte|%s<f> caçadas de sorte",
+    ["%s slow hunt|%s slow hunts##plural"] = "%s<f> caçada lenta|%s<f> caçadas lentas",
     ["killed"] = "mortos",
     ["expected more"] = "esperava mais",
     ["expected %d"] = "esperava %d",
@@ -108,9 +108,9 @@ ns.Locale.Add("ptBR", {
     ["%1$s %2$s##dropped when"] = "%1$s %2$s",
     ["It took %1$s to get %2$s."] = "Levou %1$s para conseguir %2$s.",
     ["It took %1$s to get %2$s, %3$s."] = "Levou %1$s para conseguir %2$s, %3$s.",
-    ["one more slow hunt|%s more slow hunts##plural"] = "mais uma caçada lenta|mais %s caçadas lentas",
-    ["one more lucky hunt|%s more lucky hunts##plural"] = "mais uma caçada de sorte|mais %s caçadas de sorte",
-    ["another lucky hunt|%s more lucky hunts##plural"] = "outra caçada de sorte|mais %s caçadas de sorte",
+    ["one more slow hunt|%s more slow hunts##plural"] = "mais uma caçada lenta|mais %s<f> caçadas lentas",
+    ["one more lucky hunt|%s more lucky hunts##plural"] = "mais uma caçada de sorte|mais %s<f> caçadas de sorte",
+    ["another lucky hunt|%s more lucky hunts##plural"] = "outra caçada de sorte|mais %s<f> caçadas de sorte",
     -- Features/LevelUps/Kind.lua
     ["%1$s is now level %2$s"] = "%1$s agora é nível %2$s",
     ["Now level %s"] = "Agora nível %s",
@@ -135,7 +135,7 @@ ns.Locale.Add("ptBR", {
     ["Then %1$s, %2$s."] = "Depois %1$s, %2$s.",
     ["%1$s reached %2$s, %3$s."] = "%1$s chegou a %2$s, %3$s.",
     ["%1$s reached %2$s."] = "%1$s chegou a %2$s.",
-    ["%s profession at its cap|%s professions at their cap##plural"] = "%s profissão em seu teto|%s profissões em seu teto",
+    ["%s profession at its cap|%s professions at their cap##plural"] = "%s<f> profissão em seu teto|%s<f> profissões em seu teto",
     ["%1$s, then %2$s"] = "%1$s, depois %2$s",
     -- Features/QuestFinales/Text.lua
     ["a quest"] = "uma missão",
@@ -151,7 +151,7 @@ ns.Locale.Add("ptBR", {
     ["Begun %1$s, %2$s##zone"] = "Início %1$s, %2$s",
     ["Begun %s"] = "Início %s",
     ["%1$s, a chain of %2$d quest|%1$s, a chain of %2$d quests##plural"] = "%1$s, uma sequência de %2$d missão|%1$s, uma sequência de %2$d missões",
-    ["%s chain finished|%s chains finished##plural"] = "%s sequência concluída|%s sequências concluídas",
+    ["%s chain finished|%s chains finished##plural"] = "%s<f> sequência concluída|%s<f> sequências concluídas",
     -- Features/Trade/Kind.lua
     ["Traded: %s"] = "Trocado: %s",
     -- Features/Witnesses/Kind.lua
@@ -228,7 +228,7 @@ ns.Locale.Add("ptBR", {
     ["One other was there too|%s others were there too##plural"] = "Mais uma pessoa estava lá|%s também estavam lá",
     ["And more besides"] = "E mais gente",
     ["Others were there too"] = "Outras pessoas também estavam lá",
-    ["%s witness|%s witnesses##plural"] = "%s testemunha|%s testemunhas",
+    ["%s witness|%s witnesses##plural"] = "%s<f> testemunha|%s<f> testemunhas",
     -- Features/WorldPvP/Kind.lua
     ["{You} killed %1$s %2$s##zone"] = "{Você} matou %1$s %2$s",
     ["{You} killed %s"] = "{Você} matou %s",

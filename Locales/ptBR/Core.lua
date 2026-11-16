@@ -58,7 +58,7 @@ ns.Locale.Add("ptBR", {
     ["diary##chat tag"] = "diário",
     ["and %d more|and %d more##plural"] = "e mais %d|e mais %d",
     ["%1$d character seen in the last %2$s.|%1$d characters seen in the last %2$s.##plural"] = "%1$d personagem visto em %2$s.|%1$d personagens vistos em %2$s.",
-    ["%s hour|%s hours##plural"] = "%s hora|%s horas",
+    ["%s hour|%s hours##plural"] = "%s<f> hora|%s<f> horas",
     ["usage: |cffffd100/sd sightings of <name>|r, or target them."] = "uso: |cffffd100/sd sightings of <nome>|r, ou selecione a pessoa como alvo.",
     ["no sightings of |cffffffff%s|r."] = "nenhum avistamento de |cffffffff%s|r.",
     ["|cffffffff%1$s|r: %2$d sighting(s), %3$s to %4$s, level %5$s-%6$s, hostile %7$d time(s)"] = "|cffffffff%1$s|r — avistamentos: %2$d, de %3$s a %4$s, nível %5$s-%6$s, hostis: %7$d",

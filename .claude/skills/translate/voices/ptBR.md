@@ -49,6 +49,11 @@ change it here too. Marked (?) = worth a native's first look.
 - Numbers in words up to ten, figures after; decimal comma ("3,2"),
   thousands by a dot ("1.200") or the helpers' no-break space — follow
   what the code glues. Number and unit together ("55 min", "6% de vida").
+  A count that arrives as a word must agree with its noun: where the key's
+  `%s` takes "um"/"dois" before a feminine noun ("hora", "vez", "nota",
+  "luta", "partida", "caçada", "testemunha", "profissão", "sequência"),
+  write `%s<f>` — `grammar.Agree` turns it into "uma"/"duas" and strips the
+  mark. Figures take no mark.
 - Ordinals: "25º", and "25ª" for a death or a match (`grammar.Ordinal`
   with the word list's context: "morte" and "partida" are feminine).
   Words: "primeiro/primeira…", by the noun per `##context`.
