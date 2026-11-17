@@ -106,7 +106,7 @@ ns.Locale.Add("ptBR", {
     ["The world"] = "O mundo",
     ["And others"] = "E outros",
     ["a death|%s deaths##plural"] = "uma morte|%s<f> mortes",
-    ["%1$s, to %2$s"] = "%1$s, nas mãos de %2$s",
+    ["%1$s, to %2$s"] = "%1$s, por %2$s",
     -- Features/Duels/Kind.lua
     ["Won a duel against %1$s %2$s##zone"] = "Venceu um duelo contra %1$s %2$s",
     ["Won a duel against %s"] = "Venceu um duelo contra %s",

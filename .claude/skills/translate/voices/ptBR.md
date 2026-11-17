@@ -126,7 +126,7 @@ change it here too. Marked (?) = worth a native's first look.
 | trade | troca |
 | duel | duelo |
 | find | descoberta |
-| died to | nas mãos de |
+| died to | morreu para |
 | slime | gosma |
 
 ## Length

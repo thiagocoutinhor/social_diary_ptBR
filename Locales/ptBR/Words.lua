@@ -99,7 +99,6 @@ ns.Locale.Add("ptBR", {
     ["First met"] = "Primeiro encontro",
     ["Added %s"] = "Adicionado %s",
     ["First met %s"] = "Primeiro encontro em %s",
-    ["%s together##duration"] = "%s juntos",
     ["under a minute together"] = "menos de um minuto juntos",
     ["Met %s"] = "Encontrei %s",
     ["Each time you grouped, traded or talked nearby"] = "Cada vez que fizeram grupo, negociaram ou conversaram por perto",
