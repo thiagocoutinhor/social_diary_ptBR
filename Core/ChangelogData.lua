@@ -7,6 +7,30 @@ local addonName, ns = ...
 
 ns.Changelog = {
     {
+        version = "4.1.1",
+        summary = "A small Update: the preset tags now speak your language, and Feign Death or healing yourself no longer leaves false deaths and _Close Calls_ in your diary.",
+        groups = {
+            { heading = "Changes", entries = {
+                { text = "The preset tags now show in your language", thanks = "YaN9Yu96" },
+            } },
+            { heading = "Fixes", entries = {
+                { text = "Feign Death no longer counts as a death", thanks = "JasonLudeli" },
+                { text = "Healing yourself no longer records false _Close Calls_" },
+            } },
+        },
+    },
+    {
+        version = "4.1.0",
+        summary = "This Update brings an exciting new Addition to _Your Diary_: Gear Upgrades! Whenever you equip a better Item, it gets written down. Just trying it on will not trigger it. There may be some funkiness going on with 2H->2x1H weapons and so on – Please report issues on this! The Diary also now, optionally, adds Players you encounter often enough automatically.",
+        groups = {
+            { heading = "Shiny new Things", entries = {
+                { text = "_Your Diary_ now detects when you equip upgrades of your existing equipment and displays them on your Diary's plates" },
+                { text = "Added Polish to the diary’s language settings", thanks = "KO.Media" },
+                { text = "You can now make the Diary auto-add players you encounter often or do dungeons and raids with", thanks = "ubrider, replayablecontent46369" },
+            } },
+        },
+    },
+    {
         version = "4.0.2",
         summary = "A hotfix for the Gamepad UI, where opening a player's menu locked the controller. For now, add players with the Remember key or the macros when playing with a controller.",
         groups = {
@@ -44,31 +68,6 @@ ns.Changelog = {
             } },
             { heading = "Fixes", entries = {
                 { text = "Using the diary with a controller no longer breaks buffs and targeting" },
-            } },
-        },
-    },
-    {
-        version = "3.0.2",
-        summary = "This Updates brings small but important UX fixes. Especially the red ink spills that mark your combat zones in _Your Diary_ are now more clearly computed and displayed.",
-        groups = {
-            { heading = "Changes", entries = {
-                { text = "_Dungeon View_ now places deaths, wipes and rolls precisely by mob pack data in Wailing Caverns and Shadowfang Keep" },
-            } },
-            { heading = "Changes", entries = {
-                { text = "Tooltips in _Your Diary_ Plates now summarize their data instead of showing e.g. 4 times \"Fought here for x Minutes\"" },
-            } },
-            { heading = "Fixes", entries = {
-                { text = "Dungeons, battlegrounds and boss fights no longer cause repeated Lua errors" },
-                { text = "In _Your Diary_, The red ink spills that mark your combat zones are now more clearly visible." },
-            } },
-        },
-    },
-    {
-        version = "3.0.1",
-        summary = "A Hotfix for Behaviour in Battlegrounds. Currently, BG data is interpreted badly and potentially clogging up a Diary entry. Until a proper Battleground Feature is implemented, BG Capture will be turned off.",
-        groups = {
-            { heading = "Fixes", entries = {
-                { text = "Battleground Activities are currently skipped, because they result in bad Diary data." },
             } },
         },
     },
