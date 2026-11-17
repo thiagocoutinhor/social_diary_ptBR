@@ -98,6 +98,8 @@ change it here too. Marked (?) = worth a native's first look.
 |---|---|
 | the diary | o diário |
 | Your Diary | Seu Diário |
+| diary entry | registro (never "entrada") |
+| Remember this (the picker, its key, the menu line) | Anotar isso |
 | ink in / add to the diary | anotar no diário / adicionar ao diário |
 | pencilled in | anotado a lápis |
 | rubbed out | apagado |
@@ -132,6 +134,8 @@ Portuguese runs about 15 to 25 % longer than English. Tight surfaces:
 toast cards, key-binding column, tickets, Settings labels, tab names, map
 keys, `Windows/Reunion` lines, the plate captions. There, prefer the
 shorter phrasing ("Reencontro", not "Um reencontro com alguém").
+The city list's on/off column pads to 3 characters: **sim / não** (never
+"ligado / desligado"), or the column drifts.
 
 ## Not settled
 - Whether the tab reads "Seu Diário" or "Diário" on a narrow book spine (?).

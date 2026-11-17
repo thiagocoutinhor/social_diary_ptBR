@@ -122,7 +122,7 @@ ns.Locale.Add("ptBR", {
     -- UI/Journal/Book.lua
     ["%d day|%d days##plural"] = "%d dia|%d dias",
     -- UI/Journal/Empty.lua
-    ["This is where your diary entries will show up"] = "Aqui é onde suas entradas de diário aparecerão",
+    ["This is where your diary entries will show up"] = "Aqui é onde seus registros do diário aparecerão",
     ["Or press a key"] = "Ou pressione uma tecla",
     ["Target them first."] = "Alveje-os primeiro.",
     ["Invite"] = "Convidar",

@@ -37,7 +37,7 @@ ns.Locale.Add("ptBR", {
     ["A recap of where you went and who you were with. It counts no quests and keeps no score."] = "Um resumo de onde você foi e com quem estava. Não conta missões nem guarda pontuação.",
     ["Keep my own route"] = "Mantener minha própria rota",
     ["Only your own position, never anyone else's."] = "Apenas sua posição, nunca a de ninguém mais.",
-    ["Each level gets an entry, like this:"] = "Cada nível recebe uma entrada, como esta:",
+    ["Each level gets an entry, like this:"] = "Cada nível recebe um registro, como este:",
     ["Reached on 6 October at the Crossroads, The Barrens."] = "Chegou em 6 de outubro no Crossroads, The Barrens.",
     ["An hour of quests round the Crossroads. Then Lushwater Oasis."] = "Uma hora fazendo missões perto do Crossroads. Depois Lushwater Oasis.",
     ["With Thex Theximus for forty minutes."] = "Com Thex Theximus por quarenta minutos.",

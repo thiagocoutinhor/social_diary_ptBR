@@ -67,12 +67,12 @@ ns.Locale.Add("ptBR", {
     ["Later"] = "Depois",
     -- UI/Windows/Pad.lua
     ["Put the page away"] = "Colocar a página fora de vista",
-    ["Remember them"] = "Lembrar deles",
+    ["Remember them"] = "Anotar",
     ["Put the list away"] = "Colocar a lista fora de vista",
     -- UI/Windows/Picker.lua
     ["Remember this"] = "Anotar isso",
-    ["Click somebody to add them. Already in the diary opens their entry."] = "Clique em alguém para adicioná-lo. Já no diário abre sua entrada.",
-    ["Nobody to remember right now. Target someone, or interact with them first."] = "Ninguém para lembrar agora. Selecione alguém, ou interaja com eles primeiro.",
+    ["Click somebody to add them. Already in the diary opens their entry."] = "Clique em alguém para adicioná-lo. Já no diário abre seu registro.",
+    ["Nobody to remember right now. Target someone, or interact with them first."] = "Ninguém para anotar agora. Selecione alguém, ou interaja com eles primeiro.",
     -- UI/Windows/Reunion/Pad.lua
     ["Move the toast"] = "Mover o alerta",
     -- UI/Windows/Reunion/Placing.lua
