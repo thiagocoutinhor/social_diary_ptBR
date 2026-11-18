@@ -128,7 +128,7 @@ ns.Locale.Add("ptBR", {
     ["Lost %1$d duel to %2$s|Lost %1$d duels to %2$s##plural"] = "Perdeu %1$d duelo para %2$s|Perdeu %1$d duelos para %2$s",
     ["them##against"] = "essa pessoa",
     ["them##with"] = "essa pessoa",
-    ["{you} fled %s"] = "{Você} fugiu %s",
+    ["{you} fled %s"] = "{você} fugiu %s",
     ["they fled %s"] = "o oponente fugiu %s",
     ["you duelled them"] = "você duelou com essa pessoa",
     ["Duel"] = "Duelo",

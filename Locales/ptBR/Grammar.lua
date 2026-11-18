@@ -92,18 +92,12 @@ G.Genitive = function(name) return "de " .. name end
 G.YOU_FOR = {
     -- The reader, as the subject or the object of the line.
     ["você"] = "%s",
+    ["vocês dois"] = function(name) return name .. " e você" end,
+    -- "a terceira partida sua": another character's is "de Bram".
+    ["sua"] = function(name) return "de " .. name end,
     -- The diary's own phrases, braced whole so the name falls inside them.
-    ["seu grupo"] = function(name) return "O grupo de " .. name end,
-    ["seu lado"] = function(name) return "o lado de " .. name end,
-    ["ao seu lado"] = function(name) return "ao lado de " .. name end,
-    ["do seu lado"] = function(name) return "do lado de " .. name end,
-    ["com você"] = function(name) return "com " .. name end,
-    ["contra você"] = function(name) return "contra " .. name end,
-    ["perto de você"] = function(name) return "perto de " .. name end,
-    ["junto com você"] = function(name) return "junto com " .. name end,
-    ["entre você e"] = function(name) return "entre " .. name .. " e" end,
-    ["na sua frente"] = function(name) return "na frente de " .. name end,
-    ["às suas costas"] = function(name) return "às costas de " .. name end,
+    ["seu grupo"] = "O grupo de %s",
+    ["com você"] = "com %s",
 }
 
 -- The plain preposition per role. The client's name arrives bare, with no
