@@ -16,6 +16,9 @@ change it here too. Marked (?) = worth a native's first look.
   we know nothing about ("o jogador", "cansado"): use the name, a verb,
   or "essa pessoa". A plural "they" (a group) is "eles" only where
   unavoidable.
+- Names are never translated: the sample people and shops keep their
+  spelling (**Thex**, **Wizzlebolt**, **Grizzik**), only the words round
+  them change ("WIZZLEBOLT E FILHA", "DIÁRIOS DE GRIZZIK").
 - **Gender from the game**: an adjective or participle that agrees with
   the reader or a named character takes the forms — `<you:sozinho/sozinha>`,
   `<1:morto/morta>`, `<they:salvo/salva>` (`Locales/Locale.lua`, "A
@@ -37,7 +40,10 @@ change it here too. Marked (?) = worth a native's first look.
   for state ("Já é nível 14"), futuro do pretérito for hindsight
   ("Voltariam a se encontrar no nível 15").
 - **Ledger** (rows, tooltips): the same, short, subject dropped ("Missão
-  concluída juntos por 1 h 5 min", "te matou duas vezes").
+  concluída juntos por 1 h 5 min", "te matou duas vezes"). An action done
+  **together** goes in the third person plural, not a singular verb with
+  "juntos": "Fizeram missões juntos", "Caçaram juntos", "Trocaram coisas",
+  "Conversaram", "Fizeram grupo", "Raidaram juntos", "Mataram %s".
 
 ## Typography
 - Quotes: **“…”** (nested ‘…’). Apostrophe: ’ where one is needed.
@@ -93,6 +99,21 @@ change it here too. Marked (?) = worth a native's first look.
 | Night Elf (race) | Elfo Noturno |
 | drop (an item's) | drop (kept; "a" drop is "um drop") |
 
+### Places and things the client names (checked with the user, 17 Nov 2026)
+
+The game's own names are never invented: these were read off the ptBR
+client. If a new zone, city or battleground shows up in a key, ask before
+writing a name.
+
+| English | Portuguese |
+|---|---|
+| Ratchet | Vila Catraca |
+| Tinker Town | Vila da Gambiarra |
+| Alterac Valley | Vale Alterac (no "de") |
+| Arathi Basin | Bacia Arathi |
+| Deeprun Tram | Metrô Correfundo |
+| Wolfskin Bracers | Braçadeiras de Pele de Lobo |
+
 ## The diary's own words (one word each, kept)
 | English | Portuguese |
 |---|---|
@@ -109,14 +130,16 @@ change it here too. Marked (?) = worth a native's first look.
 | the road | a estrada |
 | route (one setting label) | rota |
 | crossed paths / met | cruzar caminhos / conhecer ("se cruzaram") |
-| toast (Settings, changelog) | aviso |
+| toast (Settings, Reunion, changelog) | alerta (so a **warning** is an "aviso") |
 | card (on the card only) | cartão |
 | foe | adversário |
+| hint | sugestão |
+| tooltip | dica |
 | People | Pessoas |
 | Recently nearby | Recentemente próximo |
 | sighting | avistamento |
 | reunion | reencontro |
-| close call | escapada por pouco (a card's title: "Uma escapada por pocuo") |
+| close call | escapada por pouco (a card's title: "Uma escapada por pouco") |
 | hunt | caçada |
 | first (a first found) | primeira conquista (a card: "Sua primeira bolsa!") |
 | witness | testemunha |
