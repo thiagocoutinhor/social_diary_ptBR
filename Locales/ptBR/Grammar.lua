@@ -100,15 +100,113 @@ G.YOU_FOR = {
     ["com você"] = "com %s",
 }
 
--- The plain preposition per role. The client's name arrives bare, with no
--- article ("Floresta de Elwynn" is a feminine name that wants "na": that
--- needs the names, see the report); "near" reads "perto de".
-G.PLACE = {
-    ["in"] = "em %s", to = "para %s", from = "de %s", into = "em %s",
-    through = "por %s", near = "perto de %s", at = "em %s",
-    around = "ao redor de %s", round = "ao redor de %s",
+-- Lower case, accents included ("Pântano" -> "pântano"): by the first letter,
+-- which is all a place's name needs, and by the whole word after "Ordenado
+-- por" (PeopleSortLabel).
+local DOWN = { ["Á"] = "á", ["À"] = "à", ["Â"] = "â", ["Ã"] = "ã", ["Ä"] = "ä",
+    ["Ç"] = "ç", ["É"] = "é", ["Ê"] = "ê", ["Ë"] = "ë", ["Í"] = "í", ["Î"] = "î",
+    ["Ï"] = "ï", ["Ó"] = "ó", ["Ô"] = "ô", ["Õ"] = "õ", ["Ö"] = "ö", ["Ú"] = "ú",
+    ["Ü"] = "ü", ["Ñ"] = "ñ" }
+local function Down(word)
+    local first = word:match("^[\195][\128-\191]") or word:sub(1, 1)
+    return (DOWN[first] or first:lower()) .. word:sub(#first + 1)
+end
+
+-- A place after a preposition. The client gives the bare name ("Floresta de
+-- Elwynn"), and Portuguese says it with an article, contracted into the
+-- preposition: "na Floresta de Elwynn", "para o Vale de Alterac". The gender
+-- is the head noun's, which in Portuguese is the name's first word.
+--
+-- A name whose first word is no common noun is a city or a proper name and
+-- takes no article ("em Orgrimmar", "em Ventobravo", "em Durotar"); so does
+-- a zone whose head is not in HEAD yet: the plain preposition, as before.
+-- Names come from the game, never from here: this file only reads the first
+-- word of a name the client gave.
+--
+--   "f" one feminine, "m" one masculine, "fp"/"mp" more than one
+-- Every key in ["..."]: WoW's Lua 5.1 takes no accented bare name.
+local HEAD = {
+    -- feminine: floresta, costa, ilha
+    ["floresta"] = "f", ["costa"] = "f", ["serra"] = "f", ["serraria"] = "f", ["mina"] = "f",
+    ["caverna"] = "f", ["planície"] = "f", ["colina"] = "f", ["ilha"] = "f", ["ruína"] = "f",
+    ["montanha"] = "f", ["cidade"] = "f", ["vila"] = "f", ["aldeia"] = "f",
+    ["encruzilhada"] = "f", ["fortaleza"] = "f", ["torre"] = "f", ["gruta"] = "f",
+    ["baía"] = "f", ["enseada"] = "f", ["cratera"] = "f", ["praia"] = "f", ["lagoa"] = "f",
+    ["bacia"] = "f", ["mata"] = "f", ["selva"] = "f", ["ravina"] = "f", ["clareira"] = "f",
+    ["estepe"] = "f", ["tundra"] = "f", ["pradaria"] = "f", ["savana"] = "f",
+    ["cachoeira"] = "f", ["península"] = "f", ["fazenda"] = "f", ["pedreira"] = "f",
+    ["passagem"] = "f", ["trilha"] = "f", ["estrada"] = "f", ["cripta"] = "f", ["tumba"] = "f",
+    ["terra"] = "f", ["bastilha"] = "f", ["desolação"] = "f", ["cordilheira"] = "f",
+    ["prisão"] = "f", ["garganta"] = "f", ["barreira"] = "f", ["batalha"] = "f",
+    ["taberna"] = "f", ["criação"] = "f",
+    -- masculine: vale, pântano, bosque
+    ["vale"] = "m", ["pântano"] = "m", ["charco"] = "m", ["bosque"] = "m", ["lago"] = "m",
+    ["rio"] = "m", ["porto"] = "m", ["cabo"] = "m", ["penhasco"] = "m", ["abismo"] = "m",
+    ["ermo"] = "m", ["deserto"] = "m", ["campo"] = "m", ["pico"] = "m", ["monte"] = "m",
+    ["mar"] = "m", ["arquipélago"] = "m", ["oceano"] = "m", ["covil"] = "m",
+    ["santuário"] = "m", ["templo"] = "m", ["acampamento"] = "m", ["posto"] = "m",
+    ["moinho"] = "m", ["portal"] = "m", ["golfo"] = "m", ["estreito"] = "m", ["cume"] = "m",
+    ["sopé"] = "m", ["desfiladeiro"] = "m", ["cânion"] = "m", ["recife"] = "m", ["ilhéu"] = "m",
+    ["urzal"] = "m", ["sítio"] = "m", ["cárcere"] = "m", ["pantanal"] = "m", ["salão"] = "m",
+    ["planalto"] = "m", ["cerro"] = "m", ["gládio"] = "m", ["casarão"] = "m", ["núcleo"] = "m",
+    ["enclave"] = "m", ["incêndio"] = "m", ["palanque"] = "m", ["rasgo"] = "m",
+    ["contraforte"] = "m", ["metrô"] = "m", ["terraço"] = "m", ["monastério"] = "m",
+    -- more than one
+    ["minas"] = "fp", ["cavernas"] = "fp", ["planícies"] = "fp", ["colinas"] = "fp",
+    ["ilhas"] = "fp", ["ruínas"] = "fp", ["montanhas"] = "fp", ["catacumbas"] = "fp",
+    ["sendas"] = "fp", ["profundezas"] = "fp", ["terras"] = "fp", ["estepes"] = "fp",
+    ["clareiras"] = "fp", ["criptas"] = "fp", ["águas"] = "fp",
+    ["campos"] = "mp", ["sertões"] = "mp", ["ermos"] = "mp", ["penhascos"] = "mp",
 }
--- ZONES, DUNGEONS, SUBZONES stay empty: names come from the game client.
+
+-- An article the client's name brings with it ("A Cidade Afogada", "O Grande
+-- Oceano", "As Catacumbas"), used and dropped. A place's name never begins
+-- with one of these words as part of itself, so a leading one is the article,
+-- whatever word follows it.
+local LEAD = { a = "f", o = "m", as = "fp", os = "mp" }
+
+-- The preposition per role and gender, and before a bare name.
+local BARE = {
+    ["in"] = "em", at = "em", to = "para", into = "para", from = "de",
+    through = "por", near = "perto de", around = "ao redor de", round = "ao redor de",
+}
+local WITH = {
+    f = { ["in"] = "na", at = "na", to = "para a", into = "para a", from = "da",
+        through = "pela", near = "perto da", around = "ao redor da", round = "ao redor da" },
+    m = { ["in"] = "no", at = "no", to = "para o", into = "para o", from = "do",
+        through = "pelo", near = "perto do", around = "ao redor do", round = "ao redor do" },
+    fp = { ["in"] = "nas", at = "nas", to = "para as", into = "para as", from = "das",
+        through = "pelas", near = "perto das", around = "ao redor das", round = "ao redor das" },
+    mp = { ["in"] = "nos", at = "nos", to = "para os", into = "para os", from = "dos",
+        through = "pelos", near = "perto dos", around = "ao redor dos", round = "ao redor dos" },
+}
+
+-- `name`'s gender and its name without the article it brought, or no gender
+-- and the name whole.
+local function Gender(name)
+    local article, rest = name:match("^([AaOo][s]?) (%S.*)$")
+    if article then return LEAD[article:lower()], rest end
+    local word = name:match("^%S+")
+    return word and HEAD[Down(word)], name
+end
+
+local function Place(role)
+    return function(name)
+        name = name or ""
+        if name == "" then return BARE[role] end
+        local gender, rest = Gender(name)
+        if not gender then return BARE[role] .. " " .. name end
+        return WITH[gender][role] .. " " .. rest
+    end
+end
+
+G.PLACE = {}
+for role in pairs(BARE) do G.PLACE[role] = Place(role) end
+-- Every name of a list takes its own article and preposition: "na Floresta
+-- de Elwynn e no Vale de Alterac".
+G.EACH_PLACE = true
+-- ZONES, DUNGEONS, SUBZONES stay empty: names come from the game client,
+-- and PLACE reads the first word of each.
 
 -- A creature's or item's name for more than one, and a killer's name in a
 -- sentence: the client's names carry their own article and gender, which
@@ -117,14 +215,9 @@ G.Plural = function(name) return name end
 G.ItemWord = function(n, item) return item end
 G.KillerName = function(k) return k.name end
 
--- After "Ordenado por", lower case, accents included.
-local DOWN = { ["Á"] = "á", ["À"] = "à", ["Â"] = "â", ["Ã"] = "ã", ["Ä"] = "ä",
-    ["Ç"] = "ç", ["É"] = "é", ["Ê"] = "ê", ["Ë"] = "ë", ["Í"] = "í", ["Î"] = "î",
-    ["Ï"] = "ï", ["Ó"] = "ó", ["Ô"] = "ô", ["Õ"] = "õ", ["Ö"] = "ö", ["Ú"] = "ú",
-    ["Ü"] = "ü", ["Ñ"] = "ñ" }
+-- After "Ordenado por", lower case: Down, above.
 G.PeopleSortLabel = function(label)
-    local first = label:match("^[\195][\128-\191]") or label:sub(1, 1)
-    return (DOWN[first] or first:lower()) .. label:sub(#first + 1)
+    return Down(label)
 end
 
 -- A first found card's heading, whole: "Sua primeira bolsa!", "Seu
