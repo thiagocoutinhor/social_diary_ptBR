@@ -2,6 +2,27 @@
 
 ## [Unreleased]
 
+## [4.2.2]
+
+This small update brings improvements to the PvP labels in _Your Diary_.
+
+### Changes
+
+- PvP labels in _Your Diary_ now show the opponents level, class and race, or, if they are in your Diary, their name.
+- Improved the design of the PvP labels in _Your Diary_.
+
+### Fixes
+
+- Quest drops are now only judged on looted items. Items that come from trading and mails are ignored for lucky / unlucky cards.
+
+## [4.2.1]
+
+A small Update: people who ride a zeppelin or boat with you, or walk beside you into a new zone, no longer count as seen twice.
+
+### Fixes
+
+- Crossing a zone border no longer counts nearby people as seen twice (thanks OscillatorZ)
+
 ## [4.2.0]
 
 This Update brings the diary in Brazilian Portuguese.
