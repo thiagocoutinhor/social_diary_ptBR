@@ -125,39 +125,9 @@ end
 --
 --   "f" one feminine, "m" one masculine, "fp"/"mp" more than one
 -- Every key in ["..."]: WoW's Lua 5.1 takes no accented bare name.
-local HEAD = {
-    -- feminine: floresta, costa, ilha
-    ["floresta"] = "f", ["costa"] = "f", ["serra"] = "f", ["serraria"] = "f", ["mina"] = "f",
-    ["caverna"] = "f", ["planície"] = "f", ["colina"] = "f", ["ilha"] = "f", ["ruína"] = "f",
-    ["montanha"] = "f", ["cidade"] = "f", ["vila"] = "f", ["aldeia"] = "f",
-    ["encruzilhada"] = "f", ["fortaleza"] = "f", ["torre"] = "f", ["gruta"] = "f",
-    ["baía"] = "f", ["enseada"] = "f", ["cratera"] = "f", ["praia"] = "f", ["lagoa"] = "f",
-    ["bacia"] = "f", ["mata"] = "f", ["selva"] = "f", ["ravina"] = "f", ["clareira"] = "f",
-    ["estepe"] = "f", ["tundra"] = "f", ["pradaria"] = "f", ["savana"] = "f",
-    ["cachoeira"] = "f", ["península"] = "f", ["fazenda"] = "f", ["pedreira"] = "f",
-    ["passagem"] = "f", ["trilha"] = "f", ["estrada"] = "f", ["cripta"] = "f", ["tumba"] = "f",
-    ["terra"] = "f", ["bastilha"] = "f", ["desolação"] = "f", ["cordilheira"] = "f",
-    ["prisão"] = "f", ["garganta"] = "f", ["barreira"] = "f", ["batalha"] = "f",
-    ["taberna"] = "f", ["criação"] = "f",
-    -- masculine: vale, pântano, bosque
-    ["vale"] = "m", ["pântano"] = "m", ["charco"] = "m", ["bosque"] = "m", ["lago"] = "m",
-    ["rio"] = "m", ["porto"] = "m", ["cabo"] = "m", ["penhasco"] = "m", ["abismo"] = "m",
-    ["ermo"] = "m", ["deserto"] = "m", ["campo"] = "m", ["pico"] = "m", ["monte"] = "m",
-    ["mar"] = "m", ["arquipélago"] = "m", ["oceano"] = "m", ["covil"] = "m",
-    ["santuário"] = "m", ["templo"] = "m", ["acampamento"] = "m", ["posto"] = "m",
-    ["moinho"] = "m", ["portal"] = "m", ["golfo"] = "m", ["estreito"] = "m", ["cume"] = "m",
-    ["sopé"] = "m", ["desfiladeiro"] = "m", ["cânion"] = "m", ["recife"] = "m", ["ilhéu"] = "m",
-    ["urzal"] = "m", ["sítio"] = "m", ["cárcere"] = "m", ["pantanal"] = "m", ["salão"] = "m",
-    ["planalto"] = "m", ["cerro"] = "m", ["gládio"] = "m", ["casarão"] = "m", ["núcleo"] = "m",
-    ["enclave"] = "m", ["incêndio"] = "m", ["palanque"] = "m", ["rasgo"] = "m",
-    ["contraforte"] = "m", ["metrô"] = "m", ["terraço"] = "m", ["monastério"] = "m",
-    -- more than one
-    ["minas"] = "fp", ["cavernas"] = "fp", ["planícies"] = "fp", ["colinas"] = "fp",
-    ["ilhas"] = "fp", ["ruínas"] = "fp", ["montanhas"] = "fp", ["catacumbas"] = "fp",
-    ["sendas"] = "fp", ["profundezas"] = "fp", ["terras"] = "fp", ["estepes"] = "fp",
-    ["clareiras"] = "fp", ["criptas"] = "fp", ["águas"] = "fp",
-    ["campos"] = "mp", ["sertões"] = "mp", ["ermos"] = "mp", ["penhascos"] = "mp",
-}
+-- HEAD (first words of place names that take an article) now lives in
+-- Locales/ptBR/AreaHead.lua, which populates G.HEAD right after this file.
+G.HEAD = {}
 
 -- An article the client's name brings with it ("A Cidade Afogada", "O Grande
 -- Oceano", "As Catacumbas"), used and dropped. A place's name never begins
@@ -187,7 +157,8 @@ local function Gender(name)
     local article, rest = name:match("^([AaOo][s]?) (%S.*)$")
     if article then return LEAD[article:lower()], rest end
     local word = name:match("^%S+")
-    return word and HEAD[Down(word)], name
+    local head = G.HEAD
+    return word and head and head[Down(word)], name
 end
 
 local function Place(role)
